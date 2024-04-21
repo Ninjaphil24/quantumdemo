@@ -1,6 +1,4 @@
-<!-- <IfModule mod_rewrite.c>
-  RewriteEngine On # If the Vue app is served from a subfolder on your domain,
-  adjust the rewrite base accordingly RewriteBase /dist/ # Redirect all non-file
-  and non-directory requests to index.html RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d RewriteRule ^ index.html [QSA,L]
-</IfModule> -->
+<IfModule mod_rewrite.c>
+  RewriteEngine On RewriteCond %{REQUEST_FILENAME} !-f RewriteCond
+  %{REQUEST_FILENAME} !-d RewriteRule ^ index.html [QSA,L]
+</IfModule>
